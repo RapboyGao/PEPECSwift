@@ -21,6 +21,7 @@ public struct PEPECSentence: Codable, Sendable, Identifiable {
 
     public var url: URL? {
         Bundle.module.url(forResource: shownName, withExtension: "mp3")
+//        URL(string: "https://aviation-docs2.netlify.app/music/mp3/\(shownName).mp3")
     }
 
     @available(macOS 12.0, iOS 15.0, tvOS 15.0, watchOS 8.0, *)
