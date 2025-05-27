@@ -6,7 +6,7 @@ public extension PEPECSentence {
 
 public extension PEPECSentence {
     static let hardestSequence: [PEPECSentence] = {
-        var example =  allSentences.sorted {
+        var example = allSentences.sorted {
             $0.size > $1.size
         }
         for index in example.indices {
@@ -14,4 +14,9 @@ public extension PEPECSentence {
         }
         return example
     }()
+}
+
+public extension [PEPECSentence] {
+    static let all = allSentences
+    static let hardestSequence = PEPECSentence.hardestSequence
 }
